@@ -6,6 +6,7 @@ import Service from './Service'
 import About from './About'
 import Contact from './Contact'
 import Navbar from './Navbar'
+import ToDo from './ToDo'
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Footer from './Footer';
 
@@ -18,6 +19,7 @@ const App = () =>{
          <Route exact path="/about"  component={About} />
          <Route exact path="/service"  component={Service} />
          <Route exact path="/contact"  component={Contact} />
+         <Route exact path="/todo"  component={ToDo} />
          <Redirect to ="/" />
         </Switch>
            <Footer />
